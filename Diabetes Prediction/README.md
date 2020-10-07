@@ -1,31 +1,45 @@
-# SPS-1220-Diabetes-Prediction-using-Machine-Learning
+# Diabetes Prediction using Machine-Learning
+Predict whether a patient has diabetes or not 
 
-Diabetes Prediction using Machine Learning
+## Context
+- This dataset is originally from the <b> National Institute of Diabetes and Digestive and Kidney Diseases</b>. 
+- Several constraints were placed on the selection of these instances from a larger database. 
+- In particular, all patients here are females at least 21 years old of Pima Indian heritage.
 
-## Objective: The objective of the dataset is to diagnostically predict whether or not a patient has diabetes
+## Objective: 
+The objective of the dataset is to diagnostically predict whether or not a patient has diabetes, based on certain diagnostic measurements included in the dataset.44
 
-Dataset link: https://tinyurl.com/sb-diabetics
+## About the Data:
+- The datasets consists of several medical predictor variables and one target variable, Outcome. 
+- Predictor variables includes the number of pregnancies the patient has had, their BMI, insulin level, age, and so on.
+
+## Acknowledgment:
+This dataset is downloaded from the <a href='https://www.kaggle.com/uciml/pima-indians-diabetes-database'> Kaggle </a>
+
+## Structure: 
 
 ### Task 1: Load the Data and Import Libraries
-Load the dataset using pandas.
+- Load the dataset using pandas.
+- Import essential modules and helper functions from NumPy and Matplotlib and sklearn.
+- Explore the pandas dataframe using the head() and info() functions.
 
-Import essential modules and helper functions from NumPy and Matplotlib.
+### Task 2: Exploratory Data Analysis:
+- I used a correlation matrix, pairplot(), pointplot(), piechart using Seaborn & Matplotlib to visualize the data 
+- Used pandas inbuilt functions like df.hist(), crosstab() 
 
-Explore the pandas dataframe using the head() and info() functions.
+### Task 3: Spliting data into X(independent features) and y(dependent feature)
+- Used Feature scaling to scale the features using standrad scaler
+- Split again into Train-Test split
+### Task 4: Train the model using various algorithms
+- K-Nearest Neighbour
+- Logistic Regression
+- Random Forest
+- XG Boost
+### Task 5: Display accuracy score, Confusion matrix, and Classification report
+### Task 6: Used RandomizedSearch-CV for:
+- Random Forest
+- XG Boost
+### Task 7: Display accuracy score, Confusion matrix, and Classification report
 
-### Task 2: Preprocessing and Visualize the Data(EDA)
-For this dataset, we use a histogram, correlation matrix , pairplot(), pontplot(), barplot(), distplot(), piechart using Seaborn & Matplotlib to visualize the data 
-
-used boxplot() to check outliers in data
-
-### Task 3: Splitting Data into Test and Train data
-
-### Task 4: Train the model using Logistic algorithm
-
-### Task5: print Accuracy Score and Confusion matrix
-
-### Task 6: Train the model using KNN algorithm
-
-### Task7: print Accuracy Score and Confusion matrix
-
-#### Conclusion
+## Conclusion
+Random Forest after applying Hyper-parameter tunning gives best result in predicting Diabetes.
