@@ -1,26 +1,44 @@
-# SPS-1221-Predicting-the-count-of-bikes-rented
-Predicting the count of bikes rented
+# Bike Sharing 
+Predict the count of Rental Bikes
 
-## Objective: 
+## Objective
+The objective of the dataset is to predict the count of rental bikes.
 
-Create and Train Linear Regression Model which predicts the count of Bikes rented
+## About Data:
+This database contains 17 attributes. The target variable refers to the count of rented bikes.
 
-Dataset Link: https://archive.ics.uci.edu/ml/datasets/bike+sharing+dataset
+## Acknowledgement
+This dataset has been sourced from the <a href="https://archive.ics.uci.edu/ml/datasets/bike+sharing+dataset">UCI-ML repository </a>
 
+## Structure:
 ### Task 1: Load the Data and Import Libraries
-Load the dataset using pandas.
+- Load the dataset using pandas.
+- Import essential modules and helper functions from NumPy and Matplotlib & sklearn.
+- Explore the dataframe using the head().
 
-Import essential modules and helper functions from NumPy and Matplotlib.
+### Task 2: Inspect the Data
+- Explore the dataframe using the shape, info() functions.
+- Check the null values
+- Get Statistical Overview using describe()
 
-Explore the pandas dataframe using the head() and info() functions.
+### Task 3: Exploratory Data Analysis
+- For this dataset, I used a histogram, correlation matrix, barplot(), lineplot(), piechart, pointplot(), scatterplot() using Seaborn & Matplotlib to visualize the data
+- Used boxplot()/jointplot() to check outliers in data
+- Analysis of Time-Series Data
 
-### Task 2: Preprocessing and Visualize the Data(EDA)
-For this dataset, we use a histogram, correlation matrix , pairplot(), pointplot(), barplot(), distplot(), piechart using Seaborn & Matplotlib to visualize the data
+### Task 4: Spliting Data into x(independent variables) and y(target variable)
+- Split X and y to train and test set.
 
-used boxplot() to check outliers in data
+### Task 4: Train the model using various Techniques:
+- Linear Regression
+- Decision Tree 
 
-### Task 3: Splitting Data into Test and Train data
+### Task 5: Check r2_score and RMSE Value on Test and Train set
+### Task 6: Visualise Result by ploting the graph of Predicted Values of Train and Test Set
+### Task 5: Used Hperparameter tunning :
+- Tried to reduce RMSE
+- Tried to increase Test set Accuracy.
+### Task 6: Prediction on TEST DATA and Check RMSE of each model
 
-### Task 4: Train the model using Linear Regression
-
-### Task5: Check accuracy and plot the graph of Predicted Values
+## Conclusion :
+Decision Tree we achieved 98% accurate result in predicting count of rental bikes.
