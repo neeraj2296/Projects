@@ -16,7 +16,7 @@ This dataset has been sourced from the <a href="https://archive.ics.uci.edu/ml/d
 - Import essential modules and helper functions from NumPy and Matplotlib & sklearn.
 - Explore the dataframe using the head().
 
-###Task 2: Inspect the Data
+### Task 2: Inspect the Data
 - Explore the dataframe using the shape, info() functions.
 - Check the null values
 - Get Statistical Overview using describe()
